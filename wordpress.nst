@@ -1,0 +1,37 @@
+netra:
+ name: Wordpress
+ meta_data:
+    template: Wordpress
+    description: Wordpress Netra Stacke Template File
+    version: 0.1
+    author: james
+ databag:
+    ip: my_databag_test
+    gateway: 192.168.11.33
+    nameserver: netra.netranet.local
+    user_id: vagrant
+    password: vagrant
+    network:
+      eth0: nic0
+      eth1: nic1
+ role:
+    - name: wordpress
+      cookbook:
+        - wordpress
+ cookbook:
+    - name: wordpress
+      git: https://github.com/opscode-cookbooks/wordpress
+      branch: 
+      parameter:
+        - file: default.rb
+          attribute:
+            - default['wordpress']['db']['database'] = "wordpressdb"
+            - default['wordpress']['db']['user'] = "wordpressuser"
+ layer:
+    - name: wordpress
+      meta_data:
+        description: this layer include whole thing
+      server:
+        - name: 
+          role:
+            - wordpress
