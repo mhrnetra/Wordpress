@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Chef Wordpress Cookbook
 =======================
 The Chef Wordpress cookbook installs and configures Wordpress according to the instructions at http://codex.wordpress.org/Installing_WordPress.
@@ -207,3 +208,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+=======
+Wordpress
+=========
+
+Wordpress Netra Stack Template
+>>>>>>> 227795736c3f3914030977ac2690c362d7a77b0b
