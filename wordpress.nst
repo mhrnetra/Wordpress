@@ -4,7 +4,9 @@ netra:
     template: Wordpress
     description: Wordpress Netra Stacke Template File
     version: 0.1
+    homepage: www.daum.net
     author: james
+    author_homepage: www.naver.com
  databag:
     ip: my_databag_test
     gateway: 192.168.11.33
