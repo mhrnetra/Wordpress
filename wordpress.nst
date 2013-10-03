@@ -31,7 +31,7 @@ netra:
     - name: wordpress
       meta_data:
         description: this layer include whole thing
+      role:
+        - wordpress
       server:
         - name: 
-          role:
-            - wordpress
