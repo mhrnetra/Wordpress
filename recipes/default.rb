@@ -20,8 +20,8 @@
 include_recipe "apache2"
 include_recipe "mysql::server"
 include_recipe "mysql::ruby"
-include_recipe "php"
-include_recipe "php::module_mysql"
+include_recipe "php-1.2.4"
+include_recipe "php-1.2.4::module_mysql"
 include_recipe "apache2::mod_php5"
 
 if node.has_key?("ec2")
