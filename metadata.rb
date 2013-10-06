@@ -15,6 +15,7 @@ end
 
 depends "apache2", ">= 0.99.4"
 depends "mysql", ">= 1.0.5"
+depends "php", ">= 1.2.4"
 depends "build-essential"
 
 %w{ debian ubuntu }.each do |os|
